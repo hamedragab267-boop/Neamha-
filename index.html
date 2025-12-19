@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neamha | Menu</title>
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#fff;
+  color:#000;
+}
+
+/* Neon Header */
+header{
+  text-align:center;
+  padding:50px 15px;
+}
+header h1{
+  font-size:90px;
+  color:#ff0000;
+  text-transform:uppercase;
+  animation: neon 1.8s ease-in-out infinite alternate;
+  letter-spacing:5px;
+}
+@keyframes neon{
+  0%{text-shadow:0 0 5px #ff0000,0 0 10px #ff0000,0 0 20px #ff0000,0 0 40px #ff0000,0 0 80px #ff0000;}
+  50%{text-shadow:0 0 15px #ff4d4d,0 0 25px #ff4d4d,0 0 35px #ff4d4d,0 0 55px #ff0000,0 0 95px #ff0000;}
+  100%{text-shadow:0 0 5px #ff0000,0 0 10px #ff0000,0 0 20px #ff0000,0 0 40px #ff0000,0 0 80px #ff0000;}
+}
+
+/* Grid */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:30px;
+  padding:30px 20px;
+}
+
+/* Card */
+.card{
+  position:relative;
+  border-radius:25px;
+  overflow:hidden;
+  cursor:pointer;
+  box-shadow:0 12px 28px rgba(0,0,0,0.25);
+  transition:transform 0.35s, box-shadow 0.35s;
+  text-decoration:none;
+  color:#000;
+}
+.card:hover{
+  transform:translateY(-8px) scale(1.03);
+  box-shadow:0 15px 35px rgba(0,0,0,0.35);
+}
+
+/* Image */
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  display:block;
+  transition:transform 0.4s, filter 0.4s;
+}
+.card:hover img{
+  transform:scale(1.08);
+  filter:brightness(1.15);
+}
+
+/* Card Content */
+.card-content{
+  padding:20px;
+  background:#fff;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+.card-content h3{
+  font-size:26px;
+  margin:0;
+  color:#ff0000;
+  text-transform:uppercase;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  header h1{
+    font-size:60px;
+  }
+  .card img{
+    height:250px;
+  }
+  .card-content h3{
+    font-size:22px;
+  }
+}
+@media(max-width:480px){
+  header h1{
+    font-size:48px;
+  }
+  .card img{
+    height:200px;
+  }
+  .card-content h3{
+    font-size:18px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Neamha</h1>
+</header>
+
+<section class="menu-grid">
+  <a href="sori.html" class="card">
+    <img src="img/sori.jpg" alt="سوري">
+    <div class="card-content"><h3>سوري</h3></div>
+  </a>
+
+  <a href="creap.html" class="card">
+    <img src="img/crepe.jpg" alt="كريب">
+    <div class="card-content"><h3>كريب</h3></div>
+  </a>
+
+  <a href="burger.html" class="card">
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="برجر">
+    <div class="card-content"><h3>برجر</h3></div>
+  </a>
+
+  <a href="hwawshi.html" class="card">
+    <img src="img/hwawshi.jpg" alt="حواوشي">
+    <div class="card-content"><h3>حواوشي</h3></div>
+  </a>
+
+  <a href="foul.html" class="card">
+    <img src="img/foul.jpg" alt="فول و طعمية">
+    <div class="card-content"><h3>فول & طعمية</h3></div>
+  </a>
+
+  <a href="extra.html" class="card">
+    <img src="img/potato.jpg" alt="إضافات ومشروبات">
+    <div class="card-content"><h3>المشروبات والإضافات</h3></div>
+  </a>
+</section>
+
+</body>
+</html>

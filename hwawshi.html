@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ركن الحواوشى | Neamha</title>
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#fff;
+  color:#000;
+}
+header{
+  text-align:center;
+  padding:40px 15px;
+}
+header h1{
+  font-size:50px;
+  color:#ff0000;
+  text-transform:uppercase;
+  animation: neon 1.5s ease-in-out infinite alternate;
+  letter-spacing:4px;
+}
+@keyframes neon{
+  0%{text-shadow:0 0 5px #ff0000,0 0 10px #ff0000,0 0 20px #ff0000,0 0 40px #ff0000,0 0 80px #ff0000;}
+  50%{text-shadow:0 0 10px #ff4d4d,0 0 20px #ff4d4d,0 0 30px #ff4d4d,0 0 50px #ff0000,0 0 90px #ff0000;}
+  100%{text-shadow:0 0 5px #ff0000,0 0 10px #ff0000,0 0 20px #ff0000,0 0 40px #ff0000,0 0 80px #ff0000;}
+}
+
+.card{
+  max-width:700px;
+  margin:30px auto;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:.35s;
+  position:relative;
+  background:#fff;
+}
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+.card:hover img{
+  transform:scale(1.05);
+  filter:brightness(1.1);
+  transition:.4s;
+}
+.card-content{
+  padding:20px;
+}
+.card-content h3{
+  font-size:26px;
+  margin-bottom:12px;
+  text-align:center;
+}
+.product-list{
+  list-style:none;
+  padding:0;
+}
+.product-list li{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0;
+  border-bottom:1px solid #eee;
+  font-size:18px;
+  flex-direction:column;
+}
+.product-list li span{
+  font-weight:bold;
+  margin-top:4px;
+  color:#ff0000;
+}
+.product-list li .details{
+  font-size:14px;
+  color:#555;
+  margin-top:4px;
+}
+.back-button{
+  display:inline-block;
+  margin:20px auto;
+  padding:10px 20px;
+  background:#ff0000;
+  color:#fff;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1> الحواوشى</h1>
+</header>
+
+<a href="index.html" class="back-button">رجوع</a>
+
+<div class="card">
+  <img src="img/hwawshi.jpg" alt=" الحواوشى">
+  <div class="card-content">
+    <h3>قائمة الأصناف</h3>
+    <ul class="product-list">
+      <li>
+        حواوشى ساده
+        <span>15 جنيه</span>
+      </li>
+      <li>
+        حواوشى جبنه
+        <span>18 جنيه</span>
+      </li>
+      <li>
+        حواوشى إكسترا جبنه
+        <span>22 جنيه</span>
+      </li>
+      <li>
+        حواوشى تركى
+        <span>25 جنيه</span>
+      </li>
+      <li>
+        حواوشى كيرى
+        <span>25 جنيه</span>
+      </li>
+      <li>
+        حواوشى خضار
+        <span>20 جنيه</span>
+        <div class="details">طماطم + فلفل + زيتون</div>
+      </li>
+      <li>
+        حواوشى بسطرمة
+        <span>28 جنيه</span>
+        <div class="details">طماطم + فلفل + زيتون + بسطرمة</div>
+      </li>
+      <li>
+        حواوشى سوسيس
+        <span>28 جنيه</span>
+        <div class="details">طماطم + فلفل + سوسيس</div>
+      </li>
+      <li>
+        حواوشى نعمه
+        <span>30 جنيه</span>
+        <div class="details">موتزريلا + رومى + فلفل + طماطم + زيتون</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

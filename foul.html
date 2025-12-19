@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ركن الفول والطعمية | Neamha</title>
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#fff;
+  color:#000;
+}
+header{
+  text-align:center;
+  padding:40px 15px;
+}
+header h1{
+  font-size:50px;
+  color:#ff0000;
+  text-transform:uppercase;
+  animation: neon 1.5s ease-in-out infinite alternate;
+  letter-spacing:4px;
+}
+@keyframes neon{
+  0%{text-shadow:0 0 5px #ff0000,0 0 10px #ff0000,0 0 20px #ff0000,0 0 40px #ff0000,0 0 80px #ff0000;}
+  50%{text-shadow:0 0 10px #ff4d4d,0 0 20px #ff4d4d,0 0 30px #ff4d4d,0 0 50px #ff0000,0 0 90px #ff0000;}
+  100%{text-shadow:0 0 5px #ff0000,0 0 10px #ff0000,0 0 20px #ff0000,0 0 40px #ff0000,0 0 80px #ff0000;}
+}
+
+.card{
+  max-width:700px;
+  margin:30px auto;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:.35s;
+  position:relative;
+  background:#fff;
+}
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+.card:hover img{
+  transform:scale(1.05);
+  filter:brightness(1.1);
+  transition:.4s;
+}
+.card-content{
+  padding:20px;
+}
+.card-content h3{
+  font-size:26px;
+  margin-bottom:12px;
+  text-align:center;
+}
+.product-list{
+  list-style:none;
+  padding:0;
+}
+.product-list li{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0;
+  border-bottom:1px solid #eee;
+  font-size:18px;
+  flex-direction:column;
+}
+.product-list li span{
+  font-weight:bold;
+  margin-top:4px;
+  color:#ff0000;
+}
+.product-list li .details{
+  font-size:14px;
+  color:#555;
+  margin-top:4px;
+}
+.back-button{
+  display:inline-block;
+  position:absolute;
+  top:20px;
+  right:20px;
+  padding:10px 20px;
+  background:#ff0000;
+  color:#fff;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>الفول والطعمية</h1>
+</header>
+
+<a href="index.html" class="back-button">رجوع</a>
+
+<div class="card">
+  <img src="img/foul.jpg" alt="ركن الفول والطعمية">
+  <div class="card-content">
+    <h3>قائمة الأصناف</h3>
+    <ul class="product-list">
+      <!-- فول -->
+      <li>فول حلو <span>12 جنيه</span></li>
+      <li>فول حار <span>15 جنيه</span></li>
+      <li>فول زيتون <span>15 جنيه</span></li>
+      <li>فول اسكندرانى <span>15 جنيه</span></li>
+      <li>فول بذنجان <span>15 جنيه</span></li>
+      <li>فول معصفر <span>15 جنيه</span></li>
+      <li>فول بيض مسلوق <span>20 جنيه</span></li>
+      <li>فول بيض مقلى <span>20جنيه</span></li>
+      <li>فول ع طعمية <span>15 جنيه</span></li>
+      <li>فول سمنه <span>20 جنيه</span></li>
+      <li>ديناميت <span>30 جنيه</span></li>
+
+      <!-- طعمية -->
+      <li>طعمية <span>12 جنيه</span></li>
+      <li>طعمية مخصوص <span>15 جنيه</span></li>
+      <li>طعمية تحابيش <span>20 جنيه</span></li>
+      <li>طعمية محشية <span>15 جنيه</span></li>
+      <li>طعمية ع بذنجان <span>15جنيه</span></li>
+      <li>طعمية بطاطس <span>20 جنيه</span></li>
+      <li>طعمية بيض مسلوق <span>20 جنيه</span></li>
+      <li>طعمية بيض مقلى <span>20 جنيه</span></li>
+      <li>طعمية كيرى <span>25 جنيه</span></li>
+      <li>طعمية شيدر <span>25 جنيه</span></li>
+      <li>طعمية بسطرمة <span>25 جنيه</span></li>
+      <li>طعمية خيار مخلل <span>15 جنيه</span></li>
+      <li>طعمية بيتزا <span>30 جنيه</span></li>
+
+      <!-- بطاطس -->
+      <li>بطاطس <span>15 جنيه</span></li>
+      <li>بطاطس كاتشب <span>17 جنيه</span></li>
+      <li>بطاطس مايونيز <span>17 جنيه</span></li>
+      <li>بطاطس كاتشب + مايونيز <span>25 جنيه</span></li>
+      <li>بطاطس جبنه رومى <span>25 جنيه</span></li>
+      <li>بطاطس جبنه شيدر <span>25 جنيه</span></li>
+      <li>بطاطس جبنه موتزاريلا <span>25 جنيه</span></li>
+      <li>بطاطس ميكس جبن <span>30 جنيه</span></li>
+      <li>بطاطس بذنجان <span>20 جنيه</span></li>
+      <li>بطاطس سوسيس <span>30جنيه</span></li>
+      <li>بطاطس بسطرمة <span>30 جنيه</span></li>
+      <li>بطاطس بيض مسلوق <span>25 جنيه</span></li>
+      <li>بطاطس بيض مقلى <span>25 جنيه</span></li>
+      <li>بطاطس تحابيش <span>25 جنيه</span></li>
+
+      <!-- إضافات وبيض -->
+      <li>شيبسى <span>15 جنيه</span></li>
+      <li>بيض مسلوق <span>20 جنيه</span></li>
+      <li>بيض مقلى <span>20 جنيه</span></li>
+      <li>بيض بسطرمة <span>30 جنيه</span></li>
+      <li>بيض بيتزا <span>35 جنيه</span></li>
+      <li>بيض اباتشى <span>35 جنيه</span></li>
+      <li>بيض اسبانيش <span>25 جنيه</span></li>
+      <li>بيض رومى <span>25 جنيه</span></li>
+      <li>بيض موتزاريلا <span>25 جنيه</span></li>
+      <li>بيض شيدر <span>25 جنيه</span></li>
+      <li>بيض مدحرج <span>20 جنيه</span></li>
+      <li>جبنه مقلية <span>30 جنيه</span></li>
+      <li>انعاش <span>15 جنيه</span></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
